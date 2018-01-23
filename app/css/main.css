@@ -7498,19 +7498,33 @@ a.text-dark:focus, a.text-dark:hover {
     border: 1px solid #ddd !important; } }
 
 @media (max-width: 575px) {
-  .ctrlPrev, .ctrlNext, .logo-text {
-    display: none; }
-  h1.title {
-    font-size: 1.5625rem; }
-  .slider, .slItems {
-    height: 470px; } }
+  .header__content_slogan h2 {
+    font-size: 1.7rem !important; }
+  .header__button_lang {
+    display: none !important; } }
 
 @media (max-width: 991px) {
-  .header__content_image {
+  .header {
+    padding-bottom: 50px !important; }
+    .header__content_image {
+      display: none !important; } }
+
+@media (min-width: 767px) {
+  .hamburger-menu__content {
     display: none; } }
 
 @media (max-width: 767px) {
   nav {
+    display: none; }
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    font-size: 30px;
+    color: #3f4147;
+    left: 9.7%;
+    top: 45px; }
+  .row__hamburger {
     display: none; } }
 
 @font-face {
@@ -7544,6 +7558,46 @@ a.text-dark:focus, a.text-dark:hover {
   padding: 0 15px 0 0;
   font-size: 30px !important; }
 
+.fa-times {
+  font-size: 35px !important; }
+
+.fa-server, .fa-share {
+  margin-right: 10px; }
+
+.fa-volume-control-phone {
+  margin-right: 14px; }
+
+.active {
+  display: block; }
+
+.row__hamburger {
+  position: absolute;
+  z-index: 3;
+  background: #dfdfe2;
+  height: 100vh;
+  padding-top: 50px;
+  padding-left: 10%; }
+
+.hamburger-menu {
+  z-index: 2; }
+
+.mobile-nav__item {
+  font-family: "GothamPro Bold";
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 10px;
+  border-bottom: 1px solid #3f4147; }
+  .mobile-nav__item a {
+    color: #3f4147; }
+    .mobile-nav__item a:hover {
+      text-decoration: none;
+      color: #de0c84; }
+
+.mobile-logo {
+  position: absolute;
+  top: 30px;
+  left: 30%; }
+
 hr {
   border-top: 2px solid #de0c84;
   width: 35px;
@@ -7562,7 +7616,10 @@ hr {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
   .header__nav {
     display: -webkit-box;
     display: -webkit-flex;
@@ -7646,7 +7703,7 @@ hr {
         padding: 11px 23px;
         border: 2px solid #de0c84; }
     .header__content_image {
-      padding: 10px 0 0 120px; }
+      padding: 50px 0 0 0; }
 
 * {
   padding: 0;

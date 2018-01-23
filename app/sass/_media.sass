@@ -1,18 +1,39 @@
+@import "var"
+
 @media (max-width: 575px)
-  .ctrlPrev,.ctrlNext,.logo-text
-    display: none
-  h1.title
-    font-size: 1.5625rem
-  .slider, .slItems
-    height: 470px
+  .header__content_slogan
+    h2
+      font-size: 1.7rem!important
+  .header__button_lang
+    display: none!important
+
+
 
 @media (max-width: 991px)
-  .header__content_image
+  .header
+    padding-bottom: 50px!important
+    &__content_image
+      display: none!important
+
+
+@media (min-width: 767px)
+  .hamburger-menu__content
     display: none
 
 @media (max-width: 767px)
   nav
     display: none
+  .hamburger-menu
+    display: block
+    position: absolute
+    z-index: 2
+    font-size: 30px
+    color: $dark-blue
+    left: 9.7%
+    top: 45px
+  .row__hamburger
+    display: none
+
 
 
 
