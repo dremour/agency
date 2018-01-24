@@ -1,0 +1,79 @@
+@import "var"
+
+
+
+.services
+  width: 100%
+  border-bottom: 1px solid $light-silver
+  hr
+    margin: 8px 0 15px 0
+  &__slogan
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 55px 9.7% 39px 9.7%
+    border-bottom: 1px solid $light-silver
+    h2
+      font-size: 1.75rem
+      font-family: $gotham-bold
+      text-transform: uppercase
+      color: $dark-blue
+    &_caption
+      text-align: center
+      font-family: $gotham-reg
+      font-size: 1rem
+  &__content
+    padding: 0 9.7%
+    &_box
+      padding: 65px 10px 15px 10px
+      h6
+        font-family: $gotham-bold
+        text-transform: uppercase
+        color: $dark-blue
+        &:before
+          font-family: "FontAwesome"
+          margin: -8px 20px 0 -60px
+          font-size: 40px
+          color: $light-silver
+      &:hover h6:before
+        color: $dark-pink
+        cursor: pointer
+      &:hover span
+        padding: 3px 12.5px
+        background: $dark-pink
+        color: $white
+        cursor: pointer
+
+
+
+
+      &:nth-child(1)
+        h6:before
+          content: '\f02d'
+      &:nth-child(2)
+        h6:before
+          content: '\f140'
+      &:nth-child(3)
+        h6:before
+          content: '\f044'
+      &:nth-child(4)
+        h6:before
+          content: '\f19c'
+          margin-right: 12px
+
+
+
+      p
+        margin: 0
+      li:before
+        content: '\f10c'
+        font-family: "FontAwesome"
+        font-size: 8px
+        color: $dark-pink
+        font-weight: bold
+        margin-right: 20px
+
+  span
+    border: 2px solid $dark-pink
+    padding: 3px 12.5px
+    border-radius: 50%
